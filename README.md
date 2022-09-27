@@ -12,6 +12,8 @@ miscellaneous stats:
  * proficiency in math is 88% (avg is 54%)
  * proficiency in reading is 83% (avg is 52%)
  * s:t ration 12:1 (nys level is also 12:1)
+ 
+lead-in stats
  * bipoc enrollment is 51%, maj asian (avg is 59%, maj black and hispanic)
  * top 10% graduation rate in nys
  * state avg diversity score is .72, national avg is .69

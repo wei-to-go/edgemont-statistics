@@ -39,8 +39,22 @@ View(edgemont20race)
 
 #racial breakdown comparison
 ggplot(ethnicityCompare, aes(x=race, y=nys_percent))+
-  geom_point()+
-  geom_point(aes(x=race, y=edgemont_percent))
+  geom_point(aes(color='NYS'), shape=18, size=3)+
+  geom_point(aes(x=race, y=edgemont_percent, color='EHS'), shape=18, size=3)+
+  scale_color_manual(name='legend',
+                     labels=c('NYS','EHS'),
+                     values=c('NYS'='red','EHS'='blue'))+
+  labs(title='Figure 1 - racial breakdown',
+       y = 'percent of population')+
+  scale_x_discrete(labels=c('AAPI','Black','Latinx', 'Multiracial', 'Indigenous','White'))+
+  theme_minimal()+
+  theme(legend.position=c(.745,.7), 
+        legend.background = element_rect(fill = "gray"),   
+        legend.key = element_rect(fill = "lightgray", color='white'),
+        title = element_text(face='bold', family='mono'),
+        legend.text = element_text(family='serif'),
+        axis.text.x = element_text(family='serif', margin=margin(1,1,9,1)),
+        axis.text.y = element_text(family='serif', margin=margin(1,1,1,9)))
 
 #grad rate comparison
 ggplot(gradRace, aes(x=race, y=nys_grad_rate))+
