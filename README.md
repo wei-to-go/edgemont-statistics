@@ -1,5 +1,5 @@
 # edgemont-statistics
-campus issue 1, research and code
+Solo research project analyzing racial distribution in Edgemont High School in comparison to national average racial distributions. I did this for the school newspaper to practice with R and data visualization after first learning the basics during my summer program with Columbia.
 
 this is the code I used to analyzed edgemont statistics, below are the sites where I got my data from.
 
